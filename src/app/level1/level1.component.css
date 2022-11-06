@@ -1,0 +1,7 @@
+table.tictactoe-board {
+  border-collapse: collapse;
+}
+
+table.tictactoe-board td {
+  border: 1px solid black;
+}
