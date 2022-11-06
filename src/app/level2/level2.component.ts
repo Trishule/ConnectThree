@@ -13,5 +13,9 @@ export class Level2Component  {
     return 'O'
   }
 
+  public getTestClass(): string {
+    return 'occupied-O';
+  }
+
 
 }
