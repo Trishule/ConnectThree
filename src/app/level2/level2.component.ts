@@ -6,7 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./level2.component.css']
 })
 export class Level2Component  {
+  private currentPlayerIx;
+  public boardContent: number[][];
+  private currentWinnerIx: number;
+  constructor() {
+    this.boardContent = [
+      [0,0,0],
+      [0,0,0],
+      [0,0,0],
+    ];
 
-
-
+    this.currentPlayerIx = 1;
+    this.currentWinnerIx = 0;
+  }
 }
