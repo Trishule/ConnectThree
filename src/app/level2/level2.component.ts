@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Level2Component  {
 
+
   public testField = 'X';
 
   public getTestField(): string {
@@ -16,6 +17,10 @@ export class Level2Component  {
   public getTestClass(): string {
     return 'occupied-O';
   }
+
+  restart() {
+      console.log('hello world!');
+    }
 
 
 }
