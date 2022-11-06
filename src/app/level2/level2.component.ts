@@ -9,5 +9,9 @@ export class Level2Component  {
 
   public testField = 'X';
 
+  public getTestField(): string {
+    return 'O'
+  }
+
 
 }
