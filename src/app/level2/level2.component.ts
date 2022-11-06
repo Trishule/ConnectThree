@@ -5,11 +5,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './level2.component.html',
   styleUrls: ['./level2.component.css']
 })
-export class Level2Component implements OnInit {
+export class Level2Component  {
 
-  constructor() { }
+  public testField = 'X';
 
-  ngOnInit(): void {
-  }
 
 }
