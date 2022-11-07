@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./level2.component.css']
 })
 export class Level2Component  {
-  private currentPlayerIx;
+  private currentPlayerIx: number;
   public boardContent: number[][];
   private currentWinnerIx: number;
   private playerNames: string[];
