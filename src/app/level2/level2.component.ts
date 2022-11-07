@@ -6,20 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./level2.component.css']
 })
 export class Level2Component  {
-  private currentPlayerIx: number;
-  public boardContent: number[][];
-  private currentWinnerIx: number;
+  private currentPlayerIx!: number;
+  public boardContent!: number[][];
+  private currentWinnerIx!: number;
   private playerNames: string[];
   constructor() {
     this.playerNames = ['','X','O'];
-    this.boardContent = [
-      [0,0,0],
-      [0,0,0],
-      [0,0,0],
-    ];
-
-    this.currentPlayerIx = 1;
-    this.currentWinnerIx = 0;
+    this.onRestart();
 
   }
 
@@ -42,5 +35,18 @@ export class Level2Component  {
 
 
     }
+
+
+  }
+
+  public onRestart(): void {
+    this.boardContent = [
+      [0,0,0],
+      [0,0,0],
+      [0,0,0],
+    ];
+
+    this.currentPlayerIx = 1;
+    this.currentWinnerIx = 0;
   }
 }
